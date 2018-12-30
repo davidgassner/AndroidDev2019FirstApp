@@ -23,7 +23,7 @@
     <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:src="@drawable/monster01"
+            android:src="@drawable/ic_monster01"
             android:id="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/headline" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
