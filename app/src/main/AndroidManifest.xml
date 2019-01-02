@@ -21,7 +21,7 @@
         </activity>
         <activity
                 android:name=".DetailActivity"
-                android:label="@string/title_activity_detail"
+                android:label="@string/my_favorite_monster"
                 android:theme="@style/AppTheme.NoActionBar"
                 android:parentActivityName=".MainActivity"/>
     </application>

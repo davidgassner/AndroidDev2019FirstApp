@@ -13,12 +13,12 @@
             android:id="@+id/instruction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/choose_a_monster"
+            android:text="@string/choose"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:textStyle="bold"
-            android:textSize="36sp"
+            android:textSize="24sp"
             android:layout_marginBottom="16dp"/>
 
     <LinearLayout
@@ -33,7 +33,7 @@
 
         <ImageButton
                 android:id="@+id/monster01"
-                android:contentDescription="@string/click_to_choose"
+                android:contentDescription="@string/choose"
                 android:src="@drawable/monster01"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
@@ -42,7 +42,7 @@
 
         <ImageButton
                 android:id="@+id/monster02"
-                android:contentDescription="@string/click_to_choose"
+                android:contentDescription="@string/choose"
                 android:src="@drawable/monster02"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
@@ -62,7 +62,7 @@
 
         <ImageButton
                 android:id="@+id/monster03"
-                android:contentDescription="@string/click_to_choose"
+                android:contentDescription="@string/choose"
                 android:src="@drawable/monster03"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
@@ -71,7 +71,7 @@
 
         <ImageButton
                 android:id="@+id/monster04"
-                android:contentDescription="@string/click_to_choose"
+                android:contentDescription="@string/choose"
                 android:src="@drawable/monster04"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
