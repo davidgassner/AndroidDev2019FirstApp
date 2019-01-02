@@ -15,6 +15,17 @@ class DetailActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         Log.i("Intents", "Action = ${intent.action}")
+
+        val lastPart = intent.data?.lastPathSegment
+        if (lastPart!!.equals("view")) {
+            val monsterId = intent.data?.getQueryParameter("id")
+            Log.i("Intents", "Query parameter = $monsterId")
+        }
+
+        val extraId = intent.extras!!.getInt("monsterId")
+        Log.i("Intents", "Extra value = $extraId")
+
+        monsterImage.setImageResource(extraId)
     }
 
 }
