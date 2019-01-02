@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">My First App</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_detail">My favorite monster</string>
+    <string name="my_favorite_monster">My favorite monster</string>
+    <string name="click_to_choose">Click to choose Monster</string>
+    <string name="choose_a_monster">Choose a monster</string>
 </resources>

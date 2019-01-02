@@ -10,25 +10,74 @@
         tools:context=".MainActivity">
 
     <TextView
-            android:id="@+id/headline"
+            android:id="@+id/instruction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="My favorite monster"
+            android:text="@string/choose_a_monster"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="30dp"
-            android:textSize="36sp"/>
+            android:textStyle="bold"
+            android:textSize="36sp"
+            android:layout_marginBottom="16dp"/>
 
-    <ImageView
-            android:layout_width="0dp"
+    <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:src="@drawable/ic_monster01"
-            android:id="@+id/imageView2"
-            app:layout_constraintTop_toBottomOf="@+id/headline" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@+id/instruction"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+        <ImageButton
+                android:id="@+id/monster01"
+                android:contentDescription="@string/click_to_choose"
+                android:src="@drawable/monster01"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"/>
+
+        <ImageButton
+                android:id="@+id/monster02"
+                android:contentDescription="@string/click_to_choose"
+                android:src="@drawable/monster02"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/layout1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="horizontal">
+
+        <ImageButton
+                android:id="@+id/monster03"
+                android:contentDescription="@string/click_to_choose"
+                android:src="@drawable/monster03"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"/>
+
+        <ImageButton
+                android:id="@+id/monster04"
+                android:contentDescription="@string/click_to_choose"
+                android:src="@drawable/monster04"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"/>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
