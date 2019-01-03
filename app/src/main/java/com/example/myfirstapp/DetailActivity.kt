@@ -1,5 +1,6 @@
 package com.example.myfirstapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,14 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
         setSupportActionBar(toolbar)
+
+        if (intent.action == Intent.ACTION_SEND) {
+            val monster = intent?.getStringExtra(Intent.EXTRA_TEXT)
+            Log.i("Intents", "You selected monster $monster")
+            val monsterId = resources.getIdentifier(monster?.trim(), "drawable", packageName)
+            monsterImage.setImageResource(monsterId)
+            return
+        }
 
         Log.i("Intents", "Action = ${intent.action}")
 

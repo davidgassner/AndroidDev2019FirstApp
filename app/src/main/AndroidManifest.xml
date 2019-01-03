@@ -23,7 +23,14 @@
                 android:name=".DetailActivity"
                 android:label="@string/my_favorite_monster"
                 android:theme="@style/AppTheme.NoActionBar"
-                android:parentActivityName=".MainActivity"/>
+                android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>
